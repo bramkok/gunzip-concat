@@ -1,10 +1,11 @@
 {
-  "name": "gunzip-maybe",
-  "description": "Transform stream that gunzips its input if it is gzipped and just echoes it if not",
-  "version": "1.4.1",
+  "name": "gunzip-concat",
+  "description":
+    "Transform stream that gunzips its input if it is gzipped and just echoes it if not",
+  "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/gunzip-maybe"
+    "url": "https://github.com/bramkok/gunzip-concat"
   },
   "license": "MIT",
   "dependencies": {
@@ -18,25 +19,31 @@
   "devDependencies": {
     "concat-stream": "^1.4.5",
     "standard": "^9.0.0",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "xo": "https://github.com/bramkok/xo.git"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "prettier": true
+  },
+  "prettier": {
+    "printWidth": 78,
+    "parser": "babylon"
   },
   "scripts": {
     "test": "standard && tape test.js"
   },
   "bin": {
-    "gunzip-maybe": "./bin.js"
+    "gunzip-concat": "./bin.js"
   },
   "browser": {
     "zlib": "browserify-zlib"
   },
   "bugs": {
-    "url": "https://github.com/mafintosh/gunzip-maybe/issues"
+    "url": "https://github.com/bramkok/gunzip-concat/issues"
   },
-  "homepage": "https://github.com/mafintosh/gunzip-maybe",
+  "homepage": "https://github.com/mafintosh/gunzip-concat",
   "main": "index.js",
-  "author": "Mathias Buus (@mafintosh)",
-  "coordinates": [
-    55.6666904,
-    12.5797771
-  ]
+  "author": "Bram Kok <bramkok.com>)"
 }
